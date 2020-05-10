@@ -9,22 +9,73 @@
     <link href="https://fonts.googleapis.com/css?family=Seymour+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 </head>
-<body>
-<div class="logo"></div>
-<div class="first"></div>
-<div class="second">
-    <div class="price">
-        <p>4.99$</p>
-    </div>
-    <div class="price">
-        <p>14.99$</p>
-    </div>
-    <div class="price">
-        <p>9.99$</p>
+<body >
+<div class="logo">
+    <nav class="main_part_links">
+        <a href="#subscribes">Подписка</a>
+        <a href="#articles">Статьи</a>
+        <a href="#autors">Авторы</a>
+        <a href="#preview">Превью</a>
+        <a href="#videos">Видео</a>
+        <a href="#social">Соц. Сети</a>
+        <div>
+            <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+            </label>
+        </div>
+    </nav>
+    
+</div>
+<div class="first"  id="subscribes">
+    <div id="flashContent">
+        <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="150" height="70" id="Лого" align="middle">
+            <param name="movie" value="Лого.swf" />
+            <param name="quality" value="high" />
+            <param name="bgcolor" value="transparent" />
+            <param name="play" value="true" />
+            <param name="loop" value="true" />
+            <param name="wmode" value="transparent" />
+            <param name="scale" value="showall" />
+            <param name="menu" value="true" />
+            <param name="devicefont" value="false" />
+            <param name="salign" value="" />
+            <param name="allowScriptAccess" value="sameDomain" />
+            <!--[if !IE]>-->
+            <object type="application/x-shockwave-flash" data="Лого.swf" width="150" height="70">
+                <param name="movie" value="Лого.swf" />
+                <param name="quality" value="high" />
+                <param name="bgcolor" value="transparent" />
+                <param name="play" value="true" />
+                <param name="loop" value="true" />
+                <param name="wmode" value="transparent" />
+                <param name="scale" value="showall" />
+                <param name="menu" value="true" />
+                <param name="devicefont" value="false" />
+                <param name="salign" value="" />
+                <param name="allowScriptAccess" value="sameDomain" />
+            <!--<![endif]-->
+                <a href="http://www.adobe.com/go/getflash">
+                    <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Загрузить Adobe Flash Player" />
+                </a>
+            <!--[if !IE]>-->
+            </object>
+            <!--<![endif]-->
+        </object>
     </div>
 </div>
-<div class="third" >
-<h1 style="margin-top: 75px;">
+<div class="second" >
+    <div class="xcom">
+        <img src="images/logo-1024.png">
+    </div>
+    <div class="price" >
+       <p><a href="/pages/sub/index.html">Подробнее</a></p>
+    </div>
+    
+</div>
+ 
+<div class="third" id="articles" >
+<h1 style="margin-top: 75px;" >
     Статьи
 </h1><br>
 <article >
@@ -39,9 +90,9 @@
             <p style="float: left; text-align: left;">Макс Вебер</p>
             <p style=" text-align: right;">11:04</p>
         </div>
-        <h4 style="margin-bottom: 8%;" >Прелести Python 3.8</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia officia temporibus quam amet, nobis similique possimus. </p>
-        <br><hr>
+        <h4 style="margin-bottom: 5%;" >Was Virtual ICLR a success?</h4>
+        <p class="post_about">I attended virtual ICLR and can't help but feel that the conference was a failure. I didnt have a paper but attened the posters and was usually the only one there. </p>
+        <hr>
 
     </div>
     <div class="article">
@@ -56,9 +107,9 @@
             <p style="float: left; text-align: left;">Артур Боули</p>
             <p style="text-align: right;">12:05</p>
         </div>
-        <h4 style="margin-bottom: 8%;" >Путишествия Нефилима</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia officia temporibus quam amet, nobis similique possimus. </p>
-        <br><hr>
+        <h4 style="margin-bottom: 5%;" >Никосия - разделённая столица</h4>
+        <p class="post_about">Всегда считал Кипр местом, куда едут либо русские туристы, чтобы погреться на пляже без виз. </p>
+        <hr>
 
     </div>
     
@@ -73,9 +124,9 @@
             <p style="float: left; text-align: left;">Карина Сычева</p>
             <p style="text-align: right;">17:04</p>
         </div>
-        <h4 style="margin-bottom: 8%;" >Ветвления в JS</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia officia temporibus quam amet, nobis similique possimus. </p>
-        <br><hr>
+        <h4 style="margin-bottom: 5%;" >Ветвления в JS</h4>
+        <p class="post_about">Очень часто возникает потребность выполнить (не выполнять) какой-то блок кода только при выполнении (не выполнении) определённых условий </p>
+        <hr>
 
     </div>
   
@@ -90,14 +141,15 @@
             <p style="float: left; text-align: left;">Макс Тумберг</p>
             <p style="text-align: right;">9:15</p>
         </div>
-        <h4 style="margin-bottom: 8%;" >Будущее Фотографии</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia officia temporibus quam amet, nobis similique possimus. </p>
-        <br><hr>
+        <h4 style="margin-bottom: 5%;" >Будущее Фотографии</h4>
+        <p class="post_about">Как говорил классик — я вышел в интернет с этим вопросом. Там обсуждают какие-то «алгоритмы» и «нейросети», так и не объясняя как конкретно они влияют на фотографию.</p>
+        <hr>
 
     </div>
   
    
 </article>
+<div class="second_post_part">
 <article style=" justify-content: center; align-items: center;text-align: center; margin:0px;">
     
     <div class="article">
@@ -105,15 +157,15 @@
             <img src="images/ar.jpg" alt="AR" height="100%" width="100%">
         </div>
         <div style="margin: 5% 0%;">
-            <div class="article_autor_photo">
+            <div class="article_autor_photo_2">
                 <img src="images/hzv.png" alt="Автор" height="100%" width="100%">
             </div>
             <p style="float: left; text-align: left;">Макс Вебер</p>
             <p style="text-align: right;">15:07</p>
         </div>
-        <h4 style="margin-bottom: 8%;" >Различия AR VR MR</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia officia temporibus quam amet, nobis similique possimus. </p>
-        <br><hr>
+        <h4 style="margin-bottom: 5%;" >Различия AR VR MR</h4>
+        <p class="post_about_2">Что такое VR, AR и MR?<br> Если в случае с виртуальной реальностью у большинства людей не возникает вопросов, то споры о разнице между AR и MR не утихают до сих пор. Ниже пойдет речь о каждой из реальностей.</p>
+        <hr>
 
     </div>
     <div class="article">
@@ -121,15 +173,15 @@
             <img src="images/7dj.jpg" alt="Youtube" height="100%" width="100%">
         </div>
         <div style="margin: 5% 0%;">
-            <div class="article_autor_photo">
+            <div class="article_autor_photo_2">
                 <img src="images/ебало.png" alt="Автор" height="100%" width="100%">
             </div>
             <p style="float: left; text-align: left;">Макс Тумберг</p>
             <p style=" text-align: right;">1:04</p>
         </div>
-        <h4 style="margin-bottom: 8%;">Как юзать Touch-Bar</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia officia temporibus quam amet, nobis similique possimus. </p>
-        <br><hr>
+        <h4 style="margin-bottom: 5%;">Как юзать Touch-Bar</h4>
+        <p class="post_about_2">Когда я только его купил, я говорил, мол, тачбар — топ пушка.  Прошел год, приложения допилили, но особо полезным тачбар не стал. </p>
+        <hr>
 
     </div>
     <div class="article">
@@ -137,15 +189,15 @@
             <img src="images/72a.png" alt="Blockchain" height="100%" width="100%">
         </div>
         <div style="margin: 5% 0%;">
-            <div class="article_autor_photo">
+            <div class="article_autor_photo_2">
                 <img src="images/fhr.png" alt="Автор" height="100%" width="100%">
             </div>
             <p style="float: left; text-align: left;">Макс Вебер</p>
             <p style=" text-align: right;">13:28</p>
         </div>
-        <h4 style="margin-bottom: 8%;" >Blockchain: Ethetium</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia officia temporibus quam amet, nobis similique possimus. </p>
-        <br><hr>
+        <h4 style="margin-bottom: 5%;" >Blockchain: Ethetium</h4>
+        <p class="post_about_2">Ethereum — второй по популярности блокчейн-проект в мире. И на мой взгляд самый интересный с точки зрения технологий.</p>
+        <hr>
 
     </div>
     <div class="article " id="gradient-text" >
@@ -153,15 +205,15 @@
             <img src="images/Путин.jpg" alt="Путин" height="100%" width="100%">
         </div>
         <div style="margin: 5% 0%;">
-            <div class="article_autor_photo">
+            <div class="article_autor_photo_2">
                 <img src="images/fev.png" alt="Автор" height="100%" width="100%">
             </div>
             <p style="float: left; text-align: left;" class="gradient-text" >Карина Сычева</p>
             <p style=" text-align: right;" class="gradient-text" >11:04</p>
         </div>
-        <h4 style="margin-bottom: 8%;" class="gradient-text" >Толерантность</h4>
-        <p class="gradient-text" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia officia temporibus quam amet, nobis similique possimus. </p>
-        <br><hr>
+        <h4 style="margin-bottom: 5%;" class="gradient-text" >Толерантность</h4>
+        <p class="post_about_2 gradient-text">Насилие и силовое решение проблемы имеет преимущество перед толерантностью только на очень короткой дистанции. </p>
+        <hr>
 
     </div>
     <div class="article">
@@ -169,23 +221,23 @@
             <img src="images/Значки.jpg" alt="Youtube" height="100%" width="100%">
         </div>
         <div style="margin: 5% 0%;">
-            <div class="article_autor_photo">
+            <div class="article_autor_photo_2">
                 <img src="images/hzv.png" alt="Автор" height="100%" width="100%">
             </div>
             <p style="float: left; text-align: left;">Макс Вебер</p>
             <p style="text-align: right;">7:00</p>
         </div>
-        <h4 style="margin-bottom: 8%;" >Итоги: 2019</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia officia temporibus quam amet, nobis similique possimus. </p>
-        <br><hr>
+        <h4 style="margin-bottom: 5%;" >Итоги: 2019</h4>
+        <p class="post_about_2" >Как и последние десять лет, в этом итоговом посте я расскажу как это было, что я понял за год и какой опыт заработал. <br >Итак. 2019 — год ачивок. </p>
+        <hr>
 
     </div>
 </article>
-
-<h1 style="margin-top: 25px;">
+</div>
+<h1 style="margin-top: 25px;" id="autors">
     Авторы
 </h1><br>
-<div class="autors">
+<div class="autors" >
     <div class="autor"> 
         <div class="round">
             <img src="images/hzv.png" alt="Photo" height="100%" width="100%">
@@ -216,7 +268,8 @@
     </div>
     <br>
 </div>
-    <h1 style="margin-top: 50px;">
+
+    <h1 style="margin-top: 50px;" id="preview">
         Превью
     </h1>
     <br>
@@ -260,7 +313,7 @@
 
 </div>
 
-<h1 style="margin-top: 50px;">
+<h1 style="margin-top: 50px;" id="videos">
    Видосики
 </h1>
 <br>
@@ -285,7 +338,7 @@
 
 </div>
 
-<div class="social">
+<div class="social" id="social">
     <div class="social_networks">
     <a>Для связи →</a>
     <a href="mailto:social@vas3k.ru" target="_blank">social@vas3k.ru</a>
@@ -295,19 +348,6 @@
 </div>
 </div>
 
-
-
-
-
-
 <script src="js/main.js"></script>
 </body>
 </html>
-
-<!--
-<div class="recVid">
-    <video src="videos/Распаковка Mac Pro за 2000000 руб.mp4" controls class="recomendedVideo"></video>
-    <video src="videos/Распаковка Mac Pro за 2000000 руб.mp4" controls class="recomendedVideo"></video>
-    <video src="videos/Распаковка Mac Pro за 2000000 руб.mp4" controls class="recomendedVideo"></video>
-</div>
--->

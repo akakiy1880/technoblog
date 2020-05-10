@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main_part_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 50px;
+}
+
+.main_part_links > a {
+  margin: 0px auto;
+  color: white;
+  text-decoration: none;
+}
+
+.main_part_links > a:hover {
+  text-shadow: 1px 1px 10px red;
+}
+
+.logo {
+  background-color: #333333;
+  height: 50px;
+}
+/*# sourceMappingURL=style.css.map */

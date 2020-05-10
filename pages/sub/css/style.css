@@ -1,0 +1,272 @@
+*{  
+    margin:0;
+    padding: 0;
+    text-align: center;  
+    font-family: 'Russo One', sans-serif;
+    text-decoration: none;
+}
+
+a {  
+    text-decoration: none;
+    color:white;
+}
+
+header{  
+    width: 100%;
+    height: 50px;
+    background-color: #333333;
+}
+
+header > a {
+    color:white;
+    margin:0 auto;
+    line-height: 50px;
+}
+
+content {
+    height: 2000px;
+    width: 100%;
+}
+
+.author_back {
+    height: 350px;
+    background-image: url(/pages/sub/images/back.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.author_logo{
+    position: relative;
+    top: 260px;
+    margin: auto;
+}
+
+.author_logo img{
+    border: 10px solid white;
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+    margin: 0px auto;
+    z-index: 2;
+}
+
+.author_name{
+    margin-top: 60px;
+}
+
+.author_name h4{
+    margin: 10px auto;
+}
+
+.author_name span{
+    margin: 30px auto;
+    font-family: 'Oswald', sans-serif;
+}
+
+.membership_caption{
+    font-size: 18px;
+    margin: 25px auto;
+}
+
+.memberships{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5%;
+}
+
+.membership{
+    border: 1px solid #979797;
+    border-radius: 5px;
+    height: 300px;
+    width: 320px;
+    padding: 24px;
+    margin: 15px auto;
+}
+
+.membership_name h2{
+    font-size: 20px;
+    margin: auto;
+}
+
+.price {
+    margin: 20px auto;
+}
+
+.price span{
+    font-family: "Balsamiq Sans";
+    font-size: 40px;
+}
+
+.price p{
+    color:rgb(112, 108, 100);
+    margin: 5px auto;
+    font-family: "Balsamiq Sans";
+}
+
+.join {
+    margin: 10px 50px;
+    padding: 20px;
+    border-radius: 100px;
+    background-color: #f81200;
+}
+
+.join a:hover{
+    text-shadow:1px 1px 5px white;
+}
+
+.membership_about{
+    margin: 15px 0px;
+}
+
+.membership_about p{
+    font-size: 15px;
+    font-family: "Balsamiq Sans";
+    color: black;
+}
+
+.about h1{
+    margin: 20px auto;
+}
+
+.about_block {
+    border:1px solid #979797;
+    border-radius: 10px;
+    height: 320px;
+    width: 500px;
+    padding: 24px;
+    margin: 15px auto;
+}
+
+.about_block span{
+    font-family: 'Oswald', sans-serif;
+}
+
+.goals {
+    border:1px solid #979797;
+    border-radius: 10px;
+    height: 230px;
+    width: 500px;
+    padding: 24px;
+    margin: 15px auto;
+}
+
+.progressbar { 
+    height: 20px;
+    margin: 10px auto;
+	position: relative;
+	background: #555;
+	padding: 3px;
+	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+}
+
+.progressbar > span {
+    display: block;
+    height: 100%;
+    background-color: rgb(43,194,83);
+    background-image: linear-gradient(
+      center bottom,
+      rgb(43,194,83) 37%,
+      rgb(84,240,84) 69%
+    );
+    box-shadow: 
+      inset 0 2px 9px  rgba(255,255,255,0.3),
+      inset 0 -2px 6px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.orange > span {
+    background-color: #f1a165;
+    background-image: linear-gradient(to bottom, #f1a165, #f36d0a);
+}
+.red > span {
+    background-color: #f0a3a3;
+    background-image: linear-gradient(to bottom, #f0a3a3, #f42323);
+}
+
+.progressbar > span:after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-image: linear-gradient(
+      -45deg, 
+      rgba(255, 255, 255, .2) 25%, 
+      transparent 25%, 
+      transparent 50%, 
+      rgba(255, 255, 255, .2) 50%, 
+      rgba(255, 255, 255, .2) 75%, 
+      transparent 75%, 
+      transparent
+    );
+    z-index: 2;
+    background-size: 50px 50px;
+    animation: move 2s linear infinite;
+    overflow: hidden;
+}
+
+.progressbar > span > b {
+    margin: 0px auto;
+    z-index: 4;
+}
+
+.post_lock{
+    border: 1px solid #979797;
+    border-radius: 10px;
+    height: 110px;
+    width: 500px;
+    padding: 24px;
+    margin: 15px auto;
+}
+
+.post_lock  span, p{
+    font-family: 'Oswald', sans-serif;
+    color: grey;
+}
+
+.type_lock_posts {
+    display:flex;
+    margin: 20px auto;
+}
+
+.type_lock_posts > .type {
+    margin: 5px auto;
+}
+
+.how_it_works{
+    background-color: #f5f4f2;
+}
+
+.how_it_works p {
+    color: #706c64;
+    margin:25px auto 0px auto;
+}
+
+.how_it_works h1 {
+    position: relative;
+    top:25px;
+}
+
+.steps{
+    display:flex;   
+    margin: 0px auto;
+}
+
+.step{
+    padding:10px;
+    margin: 10px auto;
+}
+
+.step p {
+    width:160px;
+}
+
+@keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 50px 50px;
+    }
+}

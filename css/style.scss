@@ -1,0 +1,28 @@
+*{  margin:0;
+    padding: 0;
+}
+
+.main_part_links{
+    $logo_height:50px;
+    display:flex;
+    line-height: $logo_height;
+
+    >a{
+        margin:0px auto;
+        color:white;
+        text-decoration: none;
+        &:hover{
+            text-shadow: 1px 1px 10px red;
+        }
+    }         
+}
+
+.logo{
+    background-color: #333333;
+    height:$logo_height;
+} 
+@media screen and (max-width: 900px) {
+    *{
+        font-size: 8px;
+    }
+}
